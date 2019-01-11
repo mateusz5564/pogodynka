@@ -1,14 +1,71 @@
 {% load static %}
 <html>
 <head>
-    <title>Korwin krul</title>
+    <title>weather.io - by GGD</title>
+
+    <!-- style css -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+     <!-- style mapy css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/cssmap-poland/cssmap-poland.css' %}" media="screen" />
+     <!-- style MDL -->
+    <link rel="stylesheet" type="text/css" href="{% static 'MDL/material.min.css' %}" media="screen" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 </head>
 <body>
-    <h1>Polecam - Jarosław Kret</h1>
-    <div id="baner">
-        <img src="{% static 'images/baner.jpg' %}" alt="baner">
+    <!-- content -->
+    <div class="mdl-layout mdl-js-layout">
+            <header class="mdl-layout__header">
+                    <div class="mdl-layout-icon"></div>
+            </header>
+            <main class="mdl-layout__content">
+                    <div id="map-poland">
+                            <ul class="poland">
+                                  <li class="pl1"><a href="#dolnoslaskie">Dolnośląskie</a></li>
+                                  <li class="pl2"><a href="#kujawsko-pomorskie">Kujawsko-pomorskie</a></li>
+                                  <li class="pl3"><a href="#lubelskie">Lubelskie</a></li>
+                                  <li class="pl4"><a href="#lubuskie">Lubuskie</a></li>
+                                  <li class="pl5"><a href="#lodzkie">Łódzkie</a></li>
+                                  <li class="pl6"><a href="#malopolskie">Małopolskie</a></li>
+                                  <li class="pl7"><a href="#mazowieckie">Mazowieckie</a></li>
+                                  <li class="pl8"><a href="#opolskie">Opolskie</a></li>
+                                  <li class="pl9"><a href="#podkarpackie">Podkarpackie</a></li>
+                                  <li class="pl10"><a href="#podlaskie">Podlaskie</a></li>
+                                  <li class="pl11"><a href="#pomorskie">Pomorskie</a></li>
+                                  <li class="pl12"><a href="#slaskie">Śląskie</a></li>
+                                  <li class="pl13"><a href="#swietokrzyskie">Świętokrzyskie</a></li>
+                                  <li class="pl14"><a href="#warminsko-mazurskie">Warmińsko-mazurskie</a></li>
+                                  <li class="pl15"><a href="#wielkopolskie">Wielkopolskie</a></li>
+                                  <li class="pl16"><a href="#zachodniopomorskie">Zachodniopomorskie</a></li>
+                             </ul>
+                    </div>
+            </main>
     </div>
-    <img src="{% static 'images/korwin.jpg' %}" alt="korwin">
+
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+
+    <!-- MDL JS -->
+    <script type="text/javascript" src="(% static 'MDL/material.min.js' %}"></script>
+
+    <!-- CSSMap SCRIPT -->
+    <script type="text/javascript" src="{% static 'js/jquery.cssmap.min.js' %}"></script>
+
+    <script type="text/javascript">
+            $(document).ready(function(){
+
+            // CSSMap;
+            $("#map-poland").CSSMap({
+              "size": 960,
+              "mapStyle": "dark",
+              "tooltips": "visible",
+              "responsive": "auto"
+            });
+            // END OF THE CSSMap;
+
+            });
+    </script>
+
 </body>
 </html>
