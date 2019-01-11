@@ -1,59 +1,79 @@
-
+<!doctype html>
 <html>
 <head>
     {% load static %}
     <title>weather.io - by GGD</title>
 
-    <!-- style css -->
+
+    <!-- style mapy css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/cssmap-poland/cssmap-poland.css' %}" media="screen"/>
+    <!-- style MDL -->
+    <link rel="stylesheet" type="text/css" href="{% static 'MDL/material.min.css' %}" media="screen"/>
+    <link rel="stylesheet" href="{% static 'MDL/font-icon/icon.css' %}">
+
+      <!-- style css -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-     <!-- style mapy css -->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/cssmap-poland/cssmap-poland.css' %}" media="screen" />
-     <!-- style MDL -->
-    <link rel="stylesheet" type="text/css" href="{% static 'MDL/material.min.css' %}" media="screen" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 
 </head>
 <body>
-    <!-- content -->
-    <div class="mdl-layout mdl-js-layout">
-            <header class="mdl-layout__header">
-                    <div class="mdl-layout-icon"></div>
-            </header>
-            <main class="mdl-layout__content">
-                    <div id="map-poland">
-                            <ul class="poland">
-                                  <li class="pl1"><a href="#dolnoslaskie">Dolnośląskie</a></li>
-                                  <li class="pl2"><a href="#kujawsko-pomorskie">Kujawsko-pomorskie</a></li>
-                                  <li class="pl3"><a href="#lubelskie">Lubelskie</a></li>
-                                  <li class="pl4"><a href="#lubuskie">Lubuskie</a></li>
-                                  <li class="pl5"><a href="#lodzkie">Łódzkie</a></li>
-                                  <li class="pl6"><a href="#malopolskie">Małopolskie</a></li>
-                                  <li class="pl7"><a href="#mazowieckie">Mazowieckie</a></li>
-                                  <li class="pl8"><a href="#opolskie">Opolskie</a></li>
-                                  <li class="pl9"><a href="#podkarpackie">Podkarpackie</a></li>
-                                  <li class="pl10"><a href="#podlaskie">Podlaskie</a></li>
-                                  <li class="pl11"><a href="#pomorskie">Pomorskie</a></li>
-                                  <li class="pl12"><a href="#slaskie">Śląskie</a></li>
-                                  <li class="pl13"><a href="#swietokrzyskie">Świętokrzyskie</a></li>
-                                  <li class="pl14"><a href="#warminsko-mazurskie">Warmińsko-mazurskie</a></li>
-                                  <li class="pl15"><a href="#wielkopolskie">Wielkopolskie</a></li>
-                                  <li class="pl16"><a href="#zachodniopomorskie">Zachodniopomorskie</a></li>
-                             </ul>
-                    </div>
-            </main>
-    </div>
+<!-- content -->
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header mdl-layout__header--transparent mdl-layout__header--scroll">
+        <div class="mdl-layout-icon"></div>
+        <div class="mdl-layout__header-row">
+            <span class="mdl-layout__title">weather.io</span>
+            <div class="mdl-layout-spacer"></div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+                Miejscowośc
+                <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
+                    <i class="material-icons">search</i>
+                </label>
+                <div class="mdl-textfield__expandable-holder">
+                    <input class="mdl-textfield__input" type="text" id="sample6">
+                    <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
+                </div>
+            </div>
+
+        </div>
+    </header>
 
 
-    <!-- jQuery -->
-    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+    <main class="mdl-layout__content">
+        <div id="map-poland">
+            <ul class="poland">
+                <li class="pl1"><a href="#dolnoslaskie">Dolnośląskie</a></li>
+                <li class="pl2"><a href="#kujawsko-pomorskie">Kujawsko-pomorskie</a></li>
+                <li class="pl3"><a href="#lubelskie">Lubelskie</a></li>
+                <li class="pl4"><a href="#lubuskie">Lubuskie</a></li>
+                <li class="pl5"><a href="#lodzkie">Łódzkie</a></li>
+                <li class="pl6"><a href="#malopolskie">Małopolskie</a></li>
+                <li class="pl7"><a href="#mazowieckie">Mazowieckie</a></li>
+                <li class="pl8"><a href="#opolskie">Opolskie</a></li>
+                <li class="pl9"><a href="#podkarpackie">Podkarpackie</a></li>
+                <li class="pl10"><a href="#podlaskie">Podlaskie</a></li>
+                <li class="pl11"><a href="#pomorskie">Pomorskie</a></li>
+                <li class="pl12"><a href="#slaskie">Śląskie</a></li>
+                <li class="pl13"><a href="#swietokrzyskie">Świętokrzyskie</a></li>
+                <li class="pl14"><a href="#warminsko-mazurskie">Warmińsko-mazurskie</a></li>
+                <li class="pl15"><a href="#wielkopolskie">Wielkopolskie</a></li>
+                <li class="pl16"><a href="#zachodniopomorskie">Zachodniopomorskie</a></li>
+            </ul>
+        </div>
+    </main>
+</div>
 
-    <!-- MDL JS -->
-    <script type="text/javascript" src="{% static 'MDL/material.min.js' %}"></script>
 
-    <!-- CSSMap SCRIPT -->
-    <script type="text/javascript" src="{% static 'js/jquery.cssmap.min.js' %}"></script>
+<!-- MDL JS -->
+<script type="text/javascript" src="{% static 'MDL/material.min.js' %}"></script>
 
-    <script type="text/javascript">
+<!-- jQuery -->
+<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+
+<!-- CSSMap SCRIPT -->
+<script type="text/javascript" src="{% static 'js/jquery.cssmap.min.js' %}"></script>
+
+<script type="text/javascript">
             $(document).ready(function(){
 
             // CSSMap;
@@ -66,7 +86,8 @@
             // END OF THE CSSMap;
 
             });
-    </script>
+
+</script>
 
 </body>
 </html>
