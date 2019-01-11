@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+    {% load static %}
+    <title>weather.io - by GGD</title>
+
+
+    <!-- style mapy css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/cssmap-poland/cssmap-poland.css' %}" media="screen"/>
+    <!-- style MDL -->
+    <link rel="stylesheet" type="text/css" href="{% static 'MDL/material.min.css' %}" media="screen"/>
+    <link rel="stylesheet" href="{% static 'MDL/font-icon/icon.css' %}">
+
+      <!-- style css -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+</head>
+<body>
+<!-- content -->
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header mdl-layout__header--transparent mdl-layout__header--scroll">
+        <div class="mdl-layout-icon"></div>
+        <div class="mdl-layout__header-row">
+            <span class="mdl-layout__title">weather.io</span>
+            <div class="mdl-layout-spacer"></div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+                Miejscowośc
+                <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
+                    <i class="material-icons">search</i>
+                </label>
+                <div class="mdl-textfield__expandable-holder">
+                    <input class="mdl-textfield__input" type="text" id="sample6">
+                    <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main class="mdl-layout__content">
+        {% block content %}
+        {% endblock %}
+    </main>
+</div>
+
+
+<!-- MDL JS -->
+<script type="text/javascript" src="{% static 'MDL/material.min.js' %}"></script>
+
+<!-- jQuery -->
+<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+
+<!-- CSSMap SCRIPT -->
+<script type="text/javascript" src="{% static 'js/jquery.cssmap.min.js' %}"></script>
+
+<script type="text/javascript">
+            $(document).ready(function(){
+
+            // CSSMap;
+            $("#map-poland").CSSMap({
+              "size": 960,
+              "mapStyle": "dark",
+              "tooltips": "visible",
+              "responsive": "auto"
+            });
+            // END OF THE CSSMap;
+
+            });
+
+</script>
+
+</body>
+</html>

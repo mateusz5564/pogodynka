@@ -10,7 +10,6 @@ h1{
 }
 
 .demo-layout-transparent {
-
           background: url('../images/burza.jpg') center / cover;
 }
 
@@ -19,4 +18,5 @@ h1{
   /* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
   color: white;
+  background-color: rgba(100, 100, 100, 0.3);
 }
