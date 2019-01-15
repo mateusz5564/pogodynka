@@ -1,7 +1,15 @@
 {% extends 'pogoda/base.html' %}
 {% block content %}
         <h1>
-            pogoda dla miasta
-            {{ condition }}
+            POGODA
         </h1>
+        <div>
+            {% for x in pogoda %}
+                <p>Miasto: {{ x.city }}</p>
+                <p>Temperatura: {{ x.temperature }}</p>
+                <p>Description: {{ x.description }}</p>
+                <p>Icon: {{ x.icon }}</p>
+                <p>Data: {{ x.dt_txt }}</p>
+            {% endfor %}
+        </div>
 {% endblock %}
