@@ -14,6 +14,8 @@ def pogodamiasto(request):
 
     condition.__str__()
 
+    print("paweł nie pulluje z gita")
+
     return render(request, 'pogoda\pogodamiasto.html', {'condition' : condition})
 
 
