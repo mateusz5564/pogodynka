@@ -4,4 +4,31 @@
             pogoda dla miasta
             {{ condition }}
         </h1>
+<main class="mdl-layout__content">
+    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+      <thead>
+        <tr>
+          <th class="mdl-data-table__cell--non-numeric">Poniedziałek</th>
+        </tr>
+      </thead>
+      <tbody>
+            <tr>
+              <td class="mdl-data-table__cell--non-numeric">Czas i godzina</td>
+                <td colspan="7">
+                <img src="../static/images/weathericonsSVG/animated/cloudy.svg">
+                </td>
+            </tr>
+            <tr>
+              <td class="mdl-data-table__cell--non-numeric">Kolejne godziny</td>
+                <td>+3h</td>
+                <td>+6h</td>
+                <td>+9h</td>
+                <td>+12h</td>
+                <td>+15h</td>
+                <td>+18h</td>
+                <td>+21h</td>
+            </tr>
+      </tbody>
+    </table>
+</main>
 {% endblock %}
