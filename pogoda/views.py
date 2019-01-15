@@ -12,7 +12,7 @@ def mapa(request):
 def pogodamiasto(request):
     condition = requests.get('http://api.openweathermap.org/data/2.5/weather?q=Warsaw,pl&appid=824a9043fdbd8f369532b5cb6320c78b')
 
-    condition.s
+    condition.__str__()
 
     return render(request, 'pogoda\pogodamiasto.html', {'condition' : condition})
 
