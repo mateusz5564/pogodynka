@@ -21,17 +21,68 @@ def pogodamiasto(request):
     for x in range(0, len(city_weather['list'])):
         weather = {
             'city' : city,
-            'temperature': city_weather['list'][x]['main']['temp'],
+            'temperature': int(((city_weather['list'][x]['main']['temp'])-273.15)),
             'description': city_weather['list'][x]['weather'][0]['description'],
             'icon': city_weather['list'][x]['weather'][0]['icon'],
             'dt_txt': city_weather['list'][x]['dt_txt'],
         }
         pogoda.append(weather)
 
+    print("____________________________________________________-----------________________")
+    print(city_weather)
+
+    #OSOBNE DNI
+    dni = [[], [], [], [], []]
+    dniindex = 0
+
+
+    for x in range(0, len(pogoda)-1):
+        if pogoda[0]['dt_txt'].split(" ")[0] != pogoda[1]['dt_txt'].split(" ")[0]:
+            weather = {
+                'city': city,
+                'temperature': pogoda[x]['temperature'],
+                'description': pogoda[x]['description'],
+                'icon': pogoda[x]['icon'],
+                'data': pogoda[x]['dt_txt'].split(" ")[0],
+                'godzina': pogoda[x]['dt_txt'].split(" ")[1],
+            }
+            dni[dniindex].append(weather)
+            dniindex +=1
+        elif pogoda[x]['dt_txt'].split(" ")[0] == pogoda[x+1]['dt_txt'].split(" ")[0]:
+            weather = {
+                'city': city,
+                'temperature': pogoda[x]['temperature'],
+                'description': pogoda[x]['description'],
+                'icon': pogoda[x]['icon'],
+                'data': pogoda[x]['dt_txt'].split(" ")[0],
+                'godzina': pogoda[x]['dt_txt'].split(" ")[1],
+            }
+            dni[dniindex].append(weather)
+        else:
+            weather = {
+                'city': city,
+                'temperature': pogoda[x]['temperature'],
+                'description': pogoda[x]['description'],
+                'icon': pogoda[x]['icon'],
+                'data': pogoda[x]['dt_txt'].split(" ")[0],
+                'godzina': pogoda[x]['dt_txt'].split(" ")[1],
+            }
+            dni[dniindex].append(weather)
+            dniindex += 1
+        if x == len(pogoda)-2:
+            weather = {
+                'city': city,
+                'temperature': pogoda[x+1]['temperature'],
+                'description': pogoda[x+1]['description'],
+                'icon': pogoda[x+1]['icon'],
+                'data': pogoda[x+1]['dt_txt'].split(" ")[0],
+                'godzina': pogoda[x+1]['dt_txt'].split(" ")[1],
+            }
+            dni[dniindex].append(weather)
+
     print("SŁOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOWNIK")
-    print("dlugosc " + str(len(city_weather['list'])))
-    print(pogoda)
-    return render(request, 'pogoda\pogodamiasto.html', {'pogoda' : pogoda})
+    print(dni)
+    return render(request, 'pogoda\pogodamiasto.html', {'dni': dni})
 
 
 
