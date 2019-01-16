@@ -10,7 +10,7 @@ h1{
 }
 
 .demo-layout-transparent {
-          background: url('../images/burza.jpg') center / cover;
+          background: url('../images/winter.jpg') center / cover;
 }
 
 .demo-layout-transparent .mdl-layout__header,
@@ -21,7 +21,19 @@ h1{
   background-color: rgba(100, 100, 100, 0.3);
 }
 
-a:visited, a:link, a:hover, a:hover
+a, a:visited, a:link, a:hover, a:hover
 {
     text-decoration: none;
+    color:white;
 }
+
+.xd {
+    color:white;
+}
+
+#container-map {
+    margin: 10px auto;
+    width: 90%;
+    height: 800px;
+}
+

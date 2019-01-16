@@ -14,10 +14,13 @@ def mapa(request):
 
 def pogodamiasto(request):
 
-    city = request.GET['q']
-    city = str(city).capitalize()
-    print(city)
-    print("PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP")
+    if request.GET.get('q') is None:
+        city = "Warszawa"
+        city = str(city).capitalize()
+    else:
+        city = request.GET['q']
+        city = str(city).capitalize()
+
     try:
         city_weather = requests.get('http://api.openweathermap.org/data/2.5/forecast?q=' + city + ',pl&appid=824a9043fdbd8f369532b5cb6320c78b').json()
 
@@ -35,8 +38,6 @@ def pogodamiasto(request):
             }
             pogoda.append(weather)
 
-        print("____________________________________________________-----------________________")
-        print(city_weather)
 
         #OSOBNE DNI
         dni = [[], [], [], [], [], []]
@@ -100,7 +101,7 @@ def pogodamiasto(request):
                 dni[dniindex].append(weather)
         return render(request, 'pogoda\pogodamiasto.html', {'dni': dni, 'city': city})
     except:
-        msg = "Nie znaleziono lokalizacji: "
+        msg = "Nie znaleziono lokalizacji "
         return render(request, 'pogoda\pogodamiasto.html', {'city': city, 'msg': msg})
 
 

@@ -4,9 +4,8 @@
     {% load static %}
     <title>weather.io - by GGD</title>
 
-
-    <!-- style mapy css -->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/cssmap-poland/cssmap-poland.css' %}" media="screen"/>
+    {% block style %}
+    {% endblock %}
     <!-- style MDL -->
     <link rel="stylesheet" type="text/css" href="{% static 'MDL/material.min.css' %}" media="screen"/>
     <link rel="stylesheet" href="{% static 'MDL/font-icon/icon.css' %}">
@@ -22,7 +21,7 @@
     <header class="mdl-layout__header mdl-layout__header--transparent mdl-layout__header--scroll">
         <div class="mdl-layout-icon"></div>
         <div class="mdl-layout__header-row">
-            <span class="mdl-layout__title"><a href="{% url 'index' %}">weather.io</a></span>
+            <span class="mdl-layout__title"><a class="xd" href="{% url 'mapa' %}">weather.io</a></span>
             <div class="mdl-layout-spacer"></div>
 
             <!-- Expandable Textfield -->
@@ -53,24 +52,9 @@
 <!-- jQuery -->
 <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
 
-<!-- CSSMap SCRIPT -->
-<script type="text/javascript" src="{% static 'js/jquery.cssmap.min.js' %}"></script>
+{% block scripts %}
+{% endblock %}
 
-<script type="text/javascript">
-            $(document).ready(function(){
-
-            // CSSMap;
-            $("#map-poland").CSSMap({
-              "size": 960,
-              "mapStyle": "dark",
-              "tooltips": "visible",
-              "responsive": "auto"
-            });
-            // END OF THE CSSMap;
-
-            });
-
-</script>
 
 </body>
 </html>
