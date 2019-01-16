@@ -57,7 +57,7 @@ def pogodamiasto(request):
                 'data': pogoda[x]['dt_txt'].split(" ")[0],
                 'godzina': pogoda[x]['dt_txt'].split(" ")[1],
             }
-            dni[dniindex].append(weather)
+            dni[dniindex].append(weather) #wywalić -1
         else:
             weather = {
                 'city': city,
@@ -78,7 +78,7 @@ def pogodamiasto(request):
                 'data': pogoda[x+1]['dt_txt'].split(" ")[0],
                 'godzina': pogoda[x+1]['dt_txt'].split(" ")[1],
             }
-            dni[dniindex].append(weather)
+            dni[dniindex].append(weather) #wywalić -1
 
     print("SŁOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOWNIK")
     print(dni)

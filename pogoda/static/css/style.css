@@ -20,3 +20,8 @@ h1{
   color: white;
   background-color: rgba(100, 100, 100, 0.3);
 }
+
+a:visited, a:link, a:hover, a:hover
+{
+    text-decoration: none;
+}

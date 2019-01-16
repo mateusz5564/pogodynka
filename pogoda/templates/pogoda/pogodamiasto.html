@@ -1,9 +1,13 @@
 {% extends 'pogoda/base.html' %}
 {% block content %}
-        <h1>Warszawa</h1>
 
 <main class="mdl-layout__content">
     <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+        <thead>
+            <tr>
+                <th class="mdl-data-table__cell--non-numeric"><h3>Warszawa</h3></th>
+            </tr>
+          </thead>
         {% for day in dni %}
           <thead>
             <tr>
@@ -13,25 +17,14 @@
           <tbody>
                 <tr>
                   <td class="mdl-data-table__cell--non-numeric">Ikona</td>
-                    <td><img src="../static/images/weathericons/{{ day.0.icon }}.png" alt=""></td>
-                    <td><img src="../static/images/weathericons/{{ day.1.icon }}.png" alt=""></td>
-                    <td><img src="../static/images/weathericons/{{ day.2.icon }}.png" alt=""></td>
-                    <td><img src="../static/images/weathericons/{{ day.3.icon }}.png" alt=""></td>
-                    <td><img src="../static/images/weathericons/{{ day.4.icon }}.png" alt=""></td>
-                    <td><img src="../static/images/weathericons/{{ day.5.icon }}.png" alt=""></td>
-                    <td><img src="../static/images/weathericons/{{ day.6.icon }}.png" alt=""></td>
-                    <td><img src="../static/images/weathericons/{{ day.7.icon }}.png" alt=""></td>
-                </tr>
-                <tr>
-                  <td class="mdl-data-table__cell--non-numeric">Godzina</td>
-                    <td>{{ day.0.godzina }}</td>
-                    <td>{{ day.1.godzina }}</td>
-                    <td>{{ day.2.godzina }}</td>
-                    <td>{{ day.3.godzina }}</td>
-                    <td>{{ day.4.godzina }}</td>
-                    <td>{{ day.5.godzina }}</td>
-                    <td>{{ day.6.godzina }}</td>
-                    <td>{{ day.7.godzina }}</td>
+                    <td><img src="../static/images/weathericons/{{ day.0.icon }}.svg" alt=""></td>
+                    <td><img src="../static/images/weathericons/{{ day.1.icon }}.svg" alt=""></td>
+                    <td><img src="../static/images/weathericons/{{ day.2.icon }}.svg" alt=""></td>
+                    <td><img src="../static/images/weathericons/{{ day.3.icon }}.svg" alt=""></td>
+                    <td><img src="../static/images/weathericons/{{ day.4.icon }}.svg" alt=""></td>
+                    <td><img src="../static/images/weathericons/{{ day.5.icon }}.svg" alt=""></td>
+                    <td><img src="../static/images/weathericons/{{ day.6.icon }}.svg" alt=""></td>
+                    <td><img src="../static/images/weathericons/{{ day.7.icon }}.svg" alt=""></td>
                 </tr>
                 <tr>
                   <td class="mdl-data-table__cell--non-numeric">Temperatura</td>
@@ -43,6 +36,17 @@
                     <td>{{ day.5.temperature }} &deg;C</td>
                     <td>{{ day.6.temperature }} &deg;C</td>
                     <td>{{ day.7.temperature }} &deg;C</td>
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">Godzina</td>
+                    <td>{{ day.0.godzina }}</td>
+                    <td>{{ day.1.godzina }}</td>
+                    <td>{{ day.2.godzina }}</td>
+                    <td>{{ day.3.godzina }}</td>
+                    <td>{{ day.4.godzina }}</td>
+                    <td>{{ day.5.godzina }}</td>
+                    <td>{{ day.6.godzina }}</td>
+                    <td>{{ day.7.godzina }}</td>
                 </tr>
           </tbody>
         {% endfor %}
