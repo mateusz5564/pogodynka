@@ -215,11 +215,11 @@ function myOwmPopup(data) {
 function toggleWheel(localLang) {
 	if (map.scrollWheelZoom._enabled) {
 		map.scrollWheelZoom.disable();
-		document.getElementById('wheelimg').src = 'leaflet/files/ScrollWheelDisabled20.png';
+		document.getElementById('wheelimg').src = 'static/leaflet/files/ScrollWheelDisabled20.png';
 		document.getElementById('wheeltxt').innerHTML = getI18n('scrollwheel', localLang) + ' ' + getI18n('off', localLang);
 	} else {
 		map.scrollWheelZoom.enable();
-		document.getElementById('wheelimg').src = 'leaflet/files/ScrollWheel20.png';
+		document.getElementById('wheelimg').src = 'static/leaflet/files/ScrollWheel20.png';
 		document.getElementById('wheeltxt').innerHTML = getI18n('scrollwheel', localLang) + ' ' + getI18n('on', localLang);
 	}
 }
@@ -261,9 +261,9 @@ function initMap() {
 
 	var localLang = getLocalLanguage();
 
-	var city = L.OWM.current({intervall: 15, imageLoadingUrl: 'leaflet/owmloading.gif', lang: localLang, minZoom: 5,
+	var city = L.OWM.current({intervall: 15, imageLoadingUrl: 'static/leaflet/owmloading.gif', lang: localLang, minZoom: 5,
 			appId: OWM_API_KEY});
-	var windrose = L.OWM.current({intervall: 15, imageLoadingUrl: 'leaflet/owmloading.gif', lang: localLang, minZoom: 4,
+	var windrose = L.OWM.current({intervall: 15, imageLoadingUrl: 'static/leaflet/owmloading.gif', lang: localLang, minZoom: 4,
 			appId: OWM_API_KEY, markerFunction: myWindroseMarker, popup: false, clusterSize: 50,
    			imageLoadingBgUrl: 'https://openweathermap.org/img/w0/iwind.png' });
 	windrose.on('owmlayeradd', windroseAdded, windrose); // Add an event listener to get informed when windrose layer is ready
@@ -354,7 +354,7 @@ function initMap() {
 	patch.innerHTML = getI18n('prefs', localLang); // 'Preferences';
 	layerControl._form.children[0].parentNode.insertBefore(patch, null);
 	patch = L.DomUtil.create('div', '');
-	patch.innerHTML = '<div id="wheeldiv" onClick="toggleWheel(\'' + localLang + '\')"><img id="wheelimg" src="leaflet/files/ScrollWheel20.png" align="middle" > <span id="wheeltxt">' + getI18n('scrollwheel', localLang) + ' ' + getI18n('on', localLang) + '</span></div>';
+	patch.innerHTML = '<div id="wheeldiv" onClick="toggleWheel(\'' + localLang + '\')"><img id="wheelimg" src="static/leaflet/files/ScrollWheel20.png" align="middle" > <span id="wheeltxt">' + getI18n('scrollwheel', localLang) + ' ' + getI18n('on', localLang) + '</span></div>';
 	layerControl._form.children[0].parentNode.insertBefore(patch, null);
 
 	if (useGeolocation && typeof navigator.geolocation != "undefined") {

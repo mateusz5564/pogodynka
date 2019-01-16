@@ -22,7 +22,7 @@ def pogodamiasto(request):
         city = str(city).capitalize()
 
     try:
-        city_weather = requests.get('http://api.openweathermap.org/data/2.5/forecast?q=' + city + ',pl&appid=824a9043fdbd8f369532b5cb6320c78b').json()
+        city_weather = requests.get('http://api.openweathermap.org/data/2.5/forecast?q=' + city + '&appid=824a9043fdbd8f369532b5cb6320c78b').json()
 
         pogoda = []
 
