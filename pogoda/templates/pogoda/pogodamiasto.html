@@ -20,111 +20,42 @@
     <tr>
         <td class="mdl-data-table__cell--non-numeric">Godzina</td>
 
-        <!--{% with ilegodzin=day|length iledni=dni|length %}-->
-            <!--{% if ilegodzin < 8 and day == dni.0 %}-->
-                    <!--<td colspan="{{ 8|sub:ilegodzin }}"></td>-->
-            <!--{% endif %}-->
-        <!--{% endwith %}-->
-
         {% for x in day %}
             <td>{{ x.godzina }}</td>
         {% endfor %}
 
-        <!--<td>{{ day.1.godzina }}</td>-->
-        <!--<td>{{ day.2.godzina }}</td>-->
-        <!--<td>{{ day.3.godzina }}</td>-->
-        <!--<td>{{ day.4.godzina }}</td>-->
-        <!--<td>{{ day.5.godzina }}</td>-->
-        <!--<td>{{ day.6.godzina }}</td>-->
-        <!--<td>{{ day.7.godzina }}</td>-->
     </tr>
     <tr>
         <td class="mdl-data-table__cell--non-numeric"></td>
-
-        <!--{% with ilegodzin=day|length iledni=dni|length %}-->
-            <!--{% if ilegodzin < 8 and day == dni.0 %}-->
-                    <!--<td colspan="{{ 8|sub:ilegodzin }}"></td>-->
-            <!--{% endif %}-->
-        <!--{% endwith %}-->
 
         {% for x in day %}
             <td><img src="../static/images/weathericons/{{ x.icon }}.svg" alt=""></td>
         {% endfor %}
 
-        <!--<td><img src="../static/images/weathericons/{{ day.0.icon }}.svg" alt=""></td>-->
-        <!--<td><img src="../static/images/weathericons/{{ day.1.icon }}.svg" alt=""></td>-->
-        <!--<td><img src="../static/images/weathericons/{{ day.2.icon }}.svg" alt=""></td>-->
-        <!--<td><img src="../static/images/weathericons/{{ day.3.icon }}.svg" alt=""></td>-->
-        <!--<td><img src="../static/images/weathericons/{{ day.4.icon }}.svg" alt=""></td>-->
-        <!--<td><img src="../static/images/weathericons/{{ day.5.icon }}.svg" alt=""></td>-->
-        <!--<td><img src="../static/images/weathericons/{{ day.6.icon }}.svg" alt=""></td>-->
-        <!--<td><img src="../static/images/weathericons/{{ day.7.icon }}.svg" alt=""></td>-->
     </tr>
     <tr>
         <td class="mdl-data-table__cell--non-numeric">Temperatura</td>
-
-        <!--{% with ilegodzin=day|length iledni=dni|length %}-->
-            <!--{% if ilegodzin < 8 and day == dni.0 %}-->
-                    <!--<td colspan="{{ 8|sub:ilegodzin }}"></td>-->
-            <!--{% endif %}-->
-        <!--{% endwith %}-->
 
         {% for x in day %}
             <td>{{ x.temperature }}</td>
         {% endfor %}
 
-        <!--<td>{{ day.0.temperature }}</td>-->
-        <!--<td>{{ day.1.temperature }}</td>-->
-        <!--<td>{{ day.2.temperature }}</td>-->
-        <!--<td>{{ day.3.temperature }}</td>-->
-        <!--<td>{{ day.4.temperature }}</td>-->
-        <!--<td>{{ day.5.temperature }}</td>-->
-        <!--<td>{{ day.6.temperature }}</td>-->
-        <!--<td>{{ day.7.temperature }}</td>-->
     </tr>
     <tr>
         <td class="mdl-data-table__cell--non-numeric">Prędkość wiatru</td>
-
-        <!--{% with ilegodzin=day|length iledni=dni|length %}-->
-            <!--{% if ilegodzin < 8 and day == dni.0 %}-->
-                    <!--<td colspan="{{ 8|sub:ilegodzin }}"></td>-->
-            <!--{% endif %}-->
-        <!--{% endwith %}-->
 
         {% for x in day %}
             <td>{{ x.wind_speed }}</td>
         {% endfor %}
 
-        <!--<td>{{ day.0.wind_speed }}</td>-->
-        <!--<td>{{ day.1.wind_speed }}</td>-->
-        <!--<td>{{ day.2.wind_speed }}</td>-->
-        <!--<td>{{ day.3.wind_speed }}</td>-->
-        <!--<td>{{ day.4.wind_speed }}</td>-->
-        <!--<td>{{ day.5.wind_speed }}</td>-->
-        <!--<td>{{ day.6.wind_speed }}</td>-->
-        <!--<td>{{ day.7.wind_speed }}</td>-->
     </tr>
     <tr>
         <td class="mdl-data-table__cell--non-numeric">Zachmurzenie</td>
-
-        <!--{% with ilegodzin=day|length iledni=dni|length %}-->
-            <!--{% if ilegodzin < 8 and day == dni.0 %}-->
-                    <!--<td colspan="{{ 8|sub:ilegodzin }}"></td>-->
-            <!--{% endif %}-->
-        <!--{% endwith %}-->
 
         {% for x in day %}
             <td>{{ x.clouds }}</td>
         {% endfor %}
 
-        <!--<td>{{ day.0.clouds }}</td>-->
-        <!--<td>{{ day.1.clouds }}</td>-->
-        <!--<td>{{ day.2.clouds }}</td>-->
-        <!--<td>{{ day.3.clouds }}</td>-->
-        <!--<td>{{ day.4.clouds }}</td>-->
-        <!--<td>{{ day.5.clouds }}</td>-->
-        <!--<td>{{ day.6.clouds }}</td>-->
-        <!--<td>{{ day.7.clouds }}</td>-->
     </tr>
     </tbody>
     {% endfor %}

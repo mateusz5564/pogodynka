@@ -43,21 +43,7 @@ def pogodamiasto(request):
 
 
         for x in range(0, len(pogoda)-1):
-            if pogoda[0]['dt_txt'].split(" ")[0] != pogoda[1]['dt_txt'].split(" ")[0]:
-                weather = {
-                    'city': city,
-                    'temperature': pogoda[x]['temperature'],
-                    'description': pogoda[x]['description'],
-                    'icon': pogoda[x]['icon'],
-                    'wind_speed': pogoda[x]['wind_speed'],
-                    'clouds': pogoda[x]['clouds'],
-                    'day_name': dni_tygodnia[datetime.datetime.strptime(pogoda[x]['dt_txt'].split(" ")[0], "%Y-%m-%d").strftime("%A")],
-                    'data': pogoda[x]['dt_txt'].split(" ")[0],
-                    'godzina': pogoda[x]['dt_txt'].split(" ")[1],
-                }
-                dni[dniindex].append(weather)
-                dniindex +=1
-            elif pogoda[x]['dt_txt'].split(" ")[0] == pogoda[x+1]['dt_txt'].split(" ")[0]:
+            if pogoda[x]['dt_txt'].split(" ")[0] == pogoda[x+1]['dt_txt'].split(" ")[0]:
                 weather = {
                     'city': city,
                     'temperature': pogoda[x]['temperature'],
