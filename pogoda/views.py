@@ -9,6 +9,9 @@ def mapa(request):
 
 def pogodamiasto(request):
 
+    dni_tygodnia = {"Monday": "Poniedziałek", "Tuesday": "Wtorek", "Wednesday": "Środa", "Thursday": "Czwartek",
+                    "Friday": "Piątek", "Saturday": "Sobota", "Sunday": "Niedziela"}
+
     if request.GET.get('q') is None:
         city = "Warszawa"
         city = str(city).capitalize()
@@ -48,7 +51,7 @@ def pogodamiasto(request):
                     'icon': pogoda[x]['icon'],
                     'wind_speed': pogoda[x]['wind_speed'],
                     'clouds': pogoda[x]['clouds'],
-                    'day_name': datetime.datetime.strptime(pogoda[x]['dt_txt'].split(" ")[0], "%Y-%m-%d").strftime("%A"),
+                    'day_name': dni_tygodnia[datetime.datetime.strptime(pogoda[x]['dt_txt'].split(" ")[0], "%Y-%m-%d").strftime("%A")],
                     'data': pogoda[x]['dt_txt'].split(" ")[0],
                     'godzina': pogoda[x]['dt_txt'].split(" ")[1],
                 }
@@ -62,7 +65,7 @@ def pogodamiasto(request):
                     'icon': pogoda[x]['icon'],
                     'wind_speed': pogoda[x]['wind_speed'],
                     'clouds': pogoda[x]['clouds'],
-                    'day_name': datetime.datetime.strptime(pogoda[x]['dt_txt'].split(" ")[0], "%Y-%m-%d").strftime("%A"),
+                    'day_name': dni_tygodnia[datetime.datetime.strptime(pogoda[x]['dt_txt'].split(" ")[0], "%Y-%m-%d").strftime("%A")],
                     'data': pogoda[x]['dt_txt'].split(" ")[0],
                     'godzina': pogoda[x]['dt_txt'].split(" ")[1],
                 }
@@ -75,7 +78,7 @@ def pogodamiasto(request):
                     'icon': pogoda[x]['icon'],
                     'wind_speed': pogoda[x]['wind_speed'],
                     'clouds': pogoda[x]['clouds'],
-                    'day_name': datetime.datetime.strptime(pogoda[x]['dt_txt'].split(" ")[0], "%Y-%m-%d").strftime("%A"),
+                    'day_name': dni_tygodnia[datetime.datetime.strptime(pogoda[x]['dt_txt'].split(" ")[0], "%Y-%m-%d").strftime("%A")],
                     'data': pogoda[x]['dt_txt'].split(" ")[0],
                     'godzina': pogoda[x]['dt_txt'].split(" ")[1],
                 }
@@ -89,7 +92,7 @@ def pogodamiasto(request):
                     'icon': pogoda[x+1]['icon'],
                     'wind_speed': pogoda[x+1]['wind_speed'],
                     'clouds': pogoda[x+1]['clouds'],
-                    'day_name': datetime.datetime.strptime(pogoda[x+1]['dt_txt'].split(" ")[0], "%Y-%m-%d").strftime("%A"),
+                    'day_name': dni_tygodnia[datetime.datetime.strptime(pogoda[x+1]['dt_txt'].split(" ")[0], "%Y-%m-%d").strftime("%A")],
                     'data': pogoda[x+1]['dt_txt'].split(" ")[0],
                     'godzina': pogoda[x+1]['dt_txt'].split(" ")[1],
                 }
