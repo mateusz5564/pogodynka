@@ -5,16 +5,27 @@
     <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
         <thead>
             <tr>
-                <th class="mdl-data-table__cell--non-numeric"><h3>Warszawa</h3></th>
+                <th class="mdl-data-table__cell--non-numeric"><h2>{{ msg }} {{ city }}</h2></th>
             </tr>
           </thead>
         {% for day in dni %}
           <thead>
             <tr>
-                <th class="mdl-data-table__cell--non-numeric"><h3>{{ day.0.data }}</h3></th>
+                <th class="mdl-data-table__cell--non-numeric"><h4>{{ day.0.day_name}} <span style="font-size: 12px;">({{ day.0.data }})</span></h4></th>
             </tr>
           </thead>
           <tbody>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">Godzina</td>
+                    <td>{{ day.0.godzina }}</td>
+                    <td>{{ day.1.godzina }}</td>
+                    <td>{{ day.2.godzina }}</td>
+                    <td>{{ day.3.godzina }}</td>
+                    <td>{{ day.4.godzina }}</td>
+                    <td>{{ day.5.godzina }}</td>
+                    <td>{{ day.6.godzina }}</td>
+                    <td>{{ day.7.godzina }}</td>
+                </tr>
                 <tr>
                   <td class="mdl-data-table__cell--non-numeric">Ikona</td>
                     <td><img src="../static/images/weathericons/{{ day.0.icon }}.svg" alt=""></td>
@@ -28,25 +39,36 @@
                 </tr>
                 <tr>
                   <td class="mdl-data-table__cell--non-numeric">Temperatura</td>
-                    <td>{{ day.0.temperature }} &deg;C</td>
-                    <td>{{ day.1.temperature }} &deg;C</td>
-                    <td>{{ day.2.temperature }} &deg;C</td>
-                    <td>{{ day.3.temperature }} &deg;C</td>
-                    <td>{{ day.4.temperature }} &deg;C</td>
-                    <td>{{ day.5.temperature }} &deg;C</td>
-                    <td>{{ day.6.temperature }} &deg;C</td>
-                    <td>{{ day.7.temperature }} &deg;C</td>
+                    <td>{{ day.0.temperature }}</td>
+                    <td>{{ day.1.temperature }}</td>
+                    <td>{{ day.2.temperature }}</td>
+                    <td>{{ day.3.temperature }}</td>
+                    <td>{{ day.4.temperature }}</td>
+                    <td>{{ day.5.temperature }}</td>
+                    <td>{{ day.6.temperature }}</td>
+                    <td>{{ day.7.temperature }}</td>
                 </tr>
                 <tr>
-                  <td class="mdl-data-table__cell--non-numeric">Godzina</td>
-                    <td>{{ day.0.godzina }}</td>
-                    <td>{{ day.1.godzina }}</td>
-                    <td>{{ day.2.godzina }}</td>
-                    <td>{{ day.3.godzina }}</td>
-                    <td>{{ day.4.godzina }}</td>
-                    <td>{{ day.5.godzina }}</td>
-                    <td>{{ day.6.godzina }}</td>
-                    <td>{{ day.7.godzina }}</td>
+                  <td class="mdl-data-table__cell--non-numeric">Prędkość wiatru</td>
+                    <td>{{ day.0.wind_speed }}</td>
+                    <td>{{ day.1.wind_speed }}</td>
+                    <td>{{ day.2.wind_speed }}</td>
+                    <td>{{ day.3.wind_speed }}</td>
+                    <td>{{ day.4.wind_speed }}</td>
+                    <td>{{ day.5.wind_speed }}</td>
+                    <td>{{ day.6.wind_speed }}</td>
+                    <td>{{ day.7.wind_speed }}</td>
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">Zachmurzenie</td>
+                    <td>{{ day.0.clouds }}</td>
+                    <td>{{ day.1.clouds }}</td>
+                    <td>{{ day.2.clouds }}</td>
+                    <td>{{ day.3.clouds }}</td>
+                    <td>{{ day.4.clouds }}</td>
+                    <td>{{ day.5.clouds }}</td>
+                    <td>{{ day.6.clouds }}</td>
+                    <td>{{ day.7.clouds }}</td>
                 </tr>
           </tbody>
         {% endfor %}

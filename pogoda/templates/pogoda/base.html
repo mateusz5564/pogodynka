@@ -24,17 +24,20 @@
         <div class="mdl-layout__header-row">
             <span class="mdl-layout__title"><a href="{% url 'index' %}">weather.io</a></span>
             <div class="mdl-layout-spacer"></div>
-            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
-                Miejscowość
+
+            <!-- Expandable Textfield -->
+            <form method="GET" action="{% url 'pogodamiasto' %}">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+                  Miejscowość
                 <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
-                    <i class="material-icons">search</i>
+                  <i class="material-icons">search</i>
                 </label>
                 <div class="mdl-textfield__expandable-holder">
-                    <input class="mdl-textfield__input" type="text" id="sample6">
-                    <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
+                  <input class="mdl-textfield__input" type="text" name="q" id="sample6">
+                  <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
                 </div>
-            </div>
-
+              </div>
+            </form>
         </div>
     </header>
     <main class="mdl-layout__content">

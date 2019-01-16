@@ -5,6 +5,6 @@ from . import views
 urlpatterns = [
     path('sss', views.mapa, name='mapa'),
     path('post', views.post_list, name='post_list'),
-    path('index', views.index, name='index'),
-    path('', views.pogodamiasto, name='pogodamiasto'),
+    path('', views.index, name='index'),
+    path('pogodamiasto', views.pogodamiasto, name='pogodamiasto'),
 ]
