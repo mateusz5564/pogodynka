@@ -5,7 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pogoda/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/pogoda/static/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pogoda/static/leaflet/files/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/pogoda/static/leaflet/files/map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pogoda/templates/pogoda/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/pogoda/templates/pogoda/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pogoda/templates/pogoda/pogodamiasto.html" beforeDir="false" afterPath="$PROJECT_DIR$/pogoda/templates/pogoda/pogodamiasto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pogoda/templates/pogoda/post_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pogoda/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/pogoda/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pogoda/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/pogoda/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,40 +21,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pogoda/static/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-95">
-              <caret line="11" column="45" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="45" />
+            <state relative-caret-position="364">
+              <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pogoda/static/leaflet/leaflet/leaflet.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="370" column="30" selection-start-line="370" selection-start-column="30" selection-end-line="370" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pogoda/static/leaflet/leaflet/leaflet.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pogoda/static/leaflet/leaflet/leaflet-languageselector.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pogoda/static/leaflet/files/map.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="166">
-              <caret line="356" column="111" selection-start-line="356" selection-start-column="111" selection-end-line="356" selection-end-column="111" />
+              <caret line="215" column="29" selection-start-line="215" selection-start-column="8" selection-end-line="215" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -60,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pogoda/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
+            <state relative-caret-position="85">
+              <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -72,7 +51,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pogoda/templates/pogoda/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="-68">
               <caret line="23" column="64" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
             </state>
           </provider>
@@ -87,11 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pogoda/templates/pogoda/pogodamiasto.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="64" lean-forward="true" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="64" />
+            <state relative-caret-position="16">
+              <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -99,8 +78,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pogoda/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1649">
-              <caret line="110" column="13" selection-start-line="110" selection-start-column="4" selection-end-line="110" selection-end-column="13" />
+            <state relative-caret-position="640">
+              <caret line="72" column="60" lean-forward="true" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -109,9 +88,10 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>scrollwheel</find>
       <find>scr</find>
+      <find>scrollwheel</find>
       <find>scroll</find>
+      <find>con</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -121,13 +101,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pogoda/templates/pogoda/index.html" />
-        <option value="$PROJECT_DIR$/pogoda/urls.py" />
-        <option value="$PROJECT_DIR$/pogoda/templates/pogoda/pogodamiasto.html" />
         <option value="$PROJECT_DIR$/pogoda/templates/pogoda/mapa.html" />
-        <option value="$PROJECT_DIR$/pogoda/views.py" />
-        <option value="$PROJECT_DIR$/pogoda/static/css/style.css" />
         <option value="$PROJECT_DIR$/pogoda/templates/pogoda/base.html" />
         <option value="$PROJECT_DIR$/pogoda/static/leaflet/files/map.js" />
+        <option value="$PROJECT_DIR$/pogoda/urls.py" />
+        <option value="$PROJECT_DIR$/pogoda/views.py" />
+        <option value="$PROJECT_DIR$/pogoda/static/css/style.css" />
+        <option value="$PROJECT_DIR$/pogoda/templates/pogoda/pogodamiasto.html" />
       </list>
     </option>
   </component>
@@ -165,7 +145,30 @@
               <item name="pogodynka" type="462c0819:PsiDirectoryNode" />
               <item name="pogoda" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pogodynka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pogodynka" type="462c0819:PsiDirectoryNode" />
+              <item name="pogoda" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="weathericons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pogodynka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pogodynka" type="462c0819:PsiDirectoryNode" />
+              <item name="pogoda" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="leaflet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pogodynka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pogodynka" type="462c0819:PsiDirectoryNode" />
+              <item name="pogoda" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="leaflet" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pogodynka" type="b2602c69:ProjectViewProjectNode" />
@@ -289,12 +292,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547633463671</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="poprawa ścieżek do plików">
+      <created>1547648242141</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1547648242141</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12946428" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -335,7 +344,8 @@
     <MESSAGE value="socjalizm" />
     <MESSAGE value="tabela" />
     <MESSAGE value="mapa leaflet plugin" />
-    <option name="LAST_COMMIT_MESSAGE" value="mapa leaflet plugin" />
+    <MESSAGE value="poprawa ścieżek do plików" />
+    <option name="LAST_COMMIT_MESSAGE" value="poprawa ścieżek do plików" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/manage.py">
@@ -360,13 +370,44 @@
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/pogoda/static/leaflet/leaflet/leaflet-languageselector.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pogoda/static/leaflet/leaflet/leaflet.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pogoda/static/leaflet/leaflet/leaflet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="370" column="30" selection-start-line="370" selection-start-column="30" selection-end-line="370" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pogoda/static/leaflet/files/map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="215" column="29" selection-start-line="215" selection-start-column="8" selection-end-line="215" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pogoda/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
+        <state relative-caret-position="85">
+          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pogoda/templates/pogoda/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="23" column="64" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -377,55 +418,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pogoda/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pogoda/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1649">
-          <caret line="110" column="13" selection-start-line="110" selection-start-column="4" selection-end-line="110" selection-end-column="13" />
+        <state relative-caret-position="640">
+          <caret line="72" column="60" lean-forward="true" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pogoda/templates/pogoda/pogodamiasto.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="64" lean-forward="true" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pogoda/templates/pogoda/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="23" column="64" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pogoda/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-95">
-          <caret line="11" column="45" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pogoda/static/leaflet/leaflet/leaflet.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="370" column="30" selection-start-line="370" selection-start-column="30" selection-end-line="370" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pogoda/static/leaflet/leaflet/leaflet.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pogoda/static/leaflet/leaflet/leaflet-languageselector.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pogoda/static/leaflet/files/map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="356" column="111" selection-start-line="356" selection-start-column="111" selection-end-line="356" selection-end-column="111" />
+        <state relative-caret-position="16">
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
         </state>
       </provider>
     </entry>

@@ -1,8 +1,7 @@
 {% extends 'pogoda/base.html' %}
-{% block content %}
 
-<main class="mdl-layout__content">
-    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+{% block content %}
+    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp divcenter">
         <thead>
             <tr>
                 <th class="mdl-data-table__cell--non-numeric"><h2>{{ msg }} {{ city }}</h2></th>
@@ -73,6 +72,5 @@
           </tbody>
         {% endfor %}
     </table>
-</main>
 {% endblock %}
 

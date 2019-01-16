@@ -4,11 +4,6 @@ from .models import Post
 import datetime
 import requests
 
-
-
-def index(request):
-    return render(request, 'pogoda\index.html')
-
 def mapa(request):
     return render(request, 'pogoda\mapa.html')
 
@@ -104,11 +99,4 @@ def pogodamiasto(request):
         msg = "Nie znaleziono lokalizacji "
         return render(request, 'pogoda\pogodamiasto.html', {'city': city, 'msg': msg})
 
-
-
-
-
-def post_list(request):
-    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    return render(request, 'pogoda\post_list.html', {'posts': posts})
 

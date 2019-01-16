@@ -34,3 +34,7 @@ a, a:visited, a:link, a:hover, a:hover
     width: 100%;
     height: 800px;
 }
+
+.divcenter {
+    margin: auto;
+}
