@@ -213,13 +213,13 @@ function getI18n(key, lang) {
 			, on: 'روشن'
 			, off: 'خاموش'
 		},
-                pl: {
+        pl: {
 		    maps: 'Mapy'
 			, layers: 'Wastwy'
 			, current: 'Obecnie'
 
-			, clouds: 'Chmury'
-			, cloudscls: 'Chmyry (classic)'
+			, clouds: 'Zachmurzenie'
+			, cloudscls: 'Zachmurzenie (classic)'
 			, precipitation: 'Opady atmosferyczne'
 			, precipitationcls: 'Opady atmosferyczne (classic)'
 			, rain: 'Deszcz'
